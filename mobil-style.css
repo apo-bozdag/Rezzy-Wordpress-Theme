@@ -1,0 +1,404 @@
+@media (min-width: 400px) and (max-width:768px) {
+    .slider-yan-sol {
+        display: none;
+    }
+
+    .icerik-one-cikan-resim img {
+    }
+
+    .icerik-one-cikan-resim {
+        margin-bottom: -15px!important;
+    }
+
+    .blog-listesi-kategori {
+        font-size: 11px!important;
+    }
+
+    .son-haberler {
+        margin-top: 2%;
+        margin-bottom: 7%!important;
+    }
+
+    .slider-yan {
+        display: block!important;
+        max-width: 100%!important;
+        flex: 100%!important;
+        margin: 4% 5%;
+        margin-bottom: -2%!important;
+    }
+
+    .header-2 {
+        padding: 4% 7%!important;
+    }
+
+    .blog-listesi {
+        margin-bottom: 28%!important;
+    }
+
+    .header-2-menu {
+        display: none;
+    }
+
+    .orta {
+        display: none!important;
+    }
+
+    .kutu {
+        position: relative;
+        margin: 8% 0%;
+        margin-bottom: 0%!important;
+        padding: 4% 2%!important;
+        width: 100%!important;
+        max-width: 100%!important;
+        left: 0px;
+    }
+
+    .slider img {
+        height: 220px!important;
+    }
+
+    .slider-back-renk {
+        margin-top: -14.7%!important;
+    }
+
+    .blog-listesi img {
+        width: 100%!important;
+        height: 170px!important;
+        margin-right: -10px;
+        border-radius: 4px!important;
+    }
+
+    .blog-listesi-yazi {
+        top: 15px!important;
+        left: 0px!important;
+    }
+
+    .blog-listesi-tarih-yazar {
+        top: 0px!important;
+        display: none;
+        font-size: 12px!important;
+    }
+
+    .blog-listesi-yazi h3 a {
+        font-size: 15px!important;
+        line-height: 25px!important;
+    }
+
+    .yazar-paneli img {
+        display: none;
+    }
+
+    .yazar-paneli {
+        margin-top: -15px!important;
+    }
+
+    #crumbs {
+        display: none;
+    }
+
+    .okunma-sayisi {
+        display: none;
+    }
+
+    .icerik-yorum-sayisi {
+        display: none;
+    }
+
+    .icerik-kutu {
+        padding: 30px!important;
+    }
+
+    blockquote p {
+        font-size: 14px!important;
+    }
+
+    .footer {
+        display: none;
+    }
+
+    .mobil-kutu {
+        max-width: 100%;
+        margin-left: -40px;
+        display: inherit;
+        top: -40px;
+        left: -10px;
+        position: relative;
+    }
+
+    .mobil-kutu-bg {
+        position: relative;
+        left: 10px;
+        margin-bottom: -10%!important;
+        padding: 8%!important;
+        margin-left: 25px;
+        margin-top: 60px;
+    }
+
+    .mobil-row {
+        display: initial;
+    }
+
+    .slider-baslik h4 {
+        top: 15px;
+        position: relative;
+        width: 85%!important;
+    }
+
+    #gallery-1 img {
+        width: 100px!important;
+    }
+
+    label {
+        margin-bottom: 2.5rem!important;
+    }
+
+    .header-2-logo-yazi {
+        top: -6px!important;
+    }
+
+    .header-2-sag-menu {
+        top: -9px!important;
+    }
+}
+
+@media (min-width: 300px) and (max-width:400px) {
+    .slider-yan-sol {
+        display: none;
+    }
+
+    .mobil-row {
+        margin-right: -2px;
+    }
+
+    .slider-baslik h4 {
+        font-size: 19px;
+        width: 85%!important;
+        margin-top: 4%!important;
+    }
+
+    .slider-baslik {
+        left: 20px!important;
+        bottom: 0px!important;
+    }
+
+    .slider {
+        margin-left: 8px;
+    }
+
+    .icerik-one-cikan-resim img {
+        height: 130px!important;
+        margin-top: 0%!important;
+        margin-bottom: 5px;
+        border-radius: 7px;
+    }
+
+    .icerik-one-cikan-resim {
+        border-bottom: 1px solid #eee!important;
+        margin-bottom: -7%!important;
+        padding-bottom: 14px!important;
+    }
+
+    .blog-listesi-kategori {
+        font-size: 11px!important;
+    }
+
+    .son-haberler {
+        margin-top: 2%;
+        margin-bottom: 7%!important;
+    }
+
+    .slider-yan {
+        display: block!important;
+        max-width: 100%!important;
+        flex: 100%!important;
+        margin: 4% 5%;
+        margin-bottom: -2%!important;
+    }
+
+    .header-2 {
+        padding: 4% 7%!important;
+    }
+
+    .blog-listesi {
+        margin-bottom: 33%!important;
+    }
+
+    .header-2-menu {
+        display: none;
+    }
+
+    .orta {
+        display: none!important;
+    }
+
+    .kutu {
+        position: relative;
+        margin-bottom: 0%!important;
+        padding: 4% 2%!important;
+        flex: 100;
+        width: 100%!important;
+        margin-top: 4%;
+        margin-left: 4%;
+        max-width: 100%!important;
+    }
+
+    .slider img {
+        height: 220px!important;
+    }
+
+    .slider-back-renk {
+        margin-top: -65px!important;
+    }
+
+    .blog-listesi img {
+        width: 100%!important;
+        height: 160px!important;
+        margin-right: -10px;
+        border-radius: 4px!important;
+    }
+
+    .blog-listesi-yazi {
+        top: 15px!important;
+        left: 0px!important;
+    }
+
+    .blog-listesi-tarih-yazar {
+        top: 0px!important;
+        display: none;
+        font-size: 12px!important;
+    }
+
+    .blog-listesi-yazi h3 a {
+        font-size: 15px!important;
+        line-height: 25px!important;
+    }
+
+    .yazar-paneli img {
+        display: none;
+    }
+
+    .yazar-paneli {
+        margin-left: 10px;
+        margin-top: -15px!important;
+        display: none;
+    }
+
+    #crumbs {
+        display: none;
+    }
+
+    .okunma-sayisi {
+        display: none;
+    }
+
+    .icerik-yorum-sayisi {
+        display: none;
+    }
+
+    .icerik-kutu {
+        padding: 5% 6%!important;
+        margin-left: 0%;
+    }
+
+    blockquote p {
+        font-size: 14px!important;
+    }
+
+    .footer {
+        display: none;
+    }
+
+    .mobil-kutu {
+        max-width: 100%;
+        left: -7px;
+        flex: 100%;
+        padding-left: 1px;
+    }
+
+    .mobil-kutu-bg {
+        padding: 10% 10% 10%!important;
+        margin-right: 0px!important;
+        margin-bottom: 5%!important;
+        width: 600px!important;
+        left: -13px;
+        margin-top: 4%!important;
+    }
+
+    .single-mobil-kutu {
+        left: -8px;
+        display: initial;
+        margin-left: 3px;
+    }
+
+    label {
+        margin-bottom: 2.5rem!important;
+    }
+
+    .slider-row {
+        margin-right: 0!important;
+    }
+
+    .single-row {
+        margin-right: -15px;
+    }
+
+    .header-2-sag-menu {
+        right: -25px;
+    }
+}
+
+@media (max-width: 406px) and (max-width: 518px) {
+    .mobil-kutu-bg {
+        margin-left:25px;
+        margin-top: 60px;
+    }
+
+    #gallery-1 img {
+        width: 75px!important;
+    }
+
+    #respond input[type='text'] {
+        width: 100%!important;
+    }
+
+    label {
+        margin-bottom: 2.5rem!important;
+    }
+
+    .header-2-logo-yazi {
+        top: 5px!important;
+    }
+
+    .slider-container {
+        padding-left: 12px;
+        padding-right: 3px;
+    }
+}
+
+@media (max-width: 960px) {
+    .ilgili-haber_resim .img {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .ilgili-haber_kategori a {
+        padding-left: 16px;
+        text-decoration: none !important;
+    }
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .slider-yan {
+        margin-bottom: -6%!important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px!important;
+    }
+}
