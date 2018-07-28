@@ -3,7 +3,7 @@
 add_action( 'admin_enqueue_scripts', 'mabc_color_enqueues' );
 function mabc_color_enqueues() {
     wp_enqueue_style( 'wp-color-picker' );
-    wp_enqueue_script( 'meta-box-color-js', plugin_dir_url( __FILE__ ) . 'jquery.custom.js', array( 'wp-color-picker' ) );
+    wp_enqueue_script( 'meta-box-color-js', '/wp-content/themes/rezzy/ozellikler/' . 'adres-cubugu-degistir.js', array( 'wp-color-picker' ) );
 }
 
 add_action( 'wp_head', 'address_mobile_address_bar' );

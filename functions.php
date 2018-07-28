@@ -4,7 +4,8 @@ load_template( get_template_directory() . "/ozellikler/related-cards.php" );
 load_template( get_template_directory() . "/ozellikler/indirme-butonu.php" );
 
 include 'functions/post.php';
-include 'ozellikler/advanced-custom-fields/acf.php';
+// include 'ozellikler/advanced-custom-fields/acf.php';
+include 'ozellikler/advanced-custom-fields-pro/acf.php';
 include 'functions/fields.php';
 
 function wpdocs_filter_wp_title( $title, $sep ) {
