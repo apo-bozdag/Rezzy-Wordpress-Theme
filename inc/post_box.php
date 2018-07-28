@@ -7,9 +7,10 @@
     </div>
     <div class="blog-listesi-yazi">
         <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-        <?php echo strip_tags( get_field('kisa_aciklama', get_the_ID() ) ); ?>
+        <?php echo kisalt(strip_tags(get_field('kisa_aciklama', get_the_ID())), 70); ?>
     </div>
     <div class="blog-listesi-tarih-yazar">
+        <br>
         <p><?php the_author(); ?></p>
     </div>
 </div>

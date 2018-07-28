@@ -1,11 +1,4 @@
 <?php get_header(); ?>
-<?php
-$icerik = $post->post_content;
-$word   = str_word_count( strip_tags( $icerik ) );
-$m      = floor( $word / 60 );
-$s      = floor( $word % 60 / ( 60 / 60 ) );
-$est    = $m . ' dakika' . ( $m == 1 ? '' : 'da' );
-?>
     <div class="container">
         <div class="container">
             <div class="row">
@@ -27,10 +20,10 @@ $est    = $m . ' dakika' . ( $m == 1 ? '' : 'da' );
                 </div>
 
                 <div class="col-4 mobil-kutu">
-					<?php
-					if ( ! dynamic_sidebar( 'sidebar' ) ) :?>
-					<?php endif; ?>
-					<?php get_sidebar(); ?>
+                  <?php
+                  if ( ! dynamic_sidebar( 'sidebar' ) ) :?>
+                  <?php endif; ?>
+                  <?php get_sidebar(); ?>
                 </div>
             </div>
         </div>
