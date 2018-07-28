@@ -18,18 +18,7 @@
 					<?php endif ?>
 					<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-                        <div class="blog-listesi">
-                            <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
-                            <div class="blog-listesi-kategori">
-								<?php the_category( ', ,' ) ?>
-                            </div>
-                            <div class="blog-listesi-yazi">
-                                <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></h3></a>
-                            </div>
-                            <div class="blog-listesi-tarih-yazar">
-                                <p><?php the_author(); ?></p>
-                            </div>
-                        </div>
+						<?php include "inc/post_box.php"; ?>
 
 					<?php endwhile; else: ?>
 						<?php _e( '<div class="bisey-bulunmadi">Bişey Bulunmadı...</div>' ); ?>

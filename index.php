@@ -41,24 +41,10 @@
 			<a><?php echo cs_get_option( 'son-yazilar-yazisi' ); ?></a>
 		</span>
                     </div>
-					<?php if ( have_posts() ) : while ( have_posts() ) :
-					the_post(); ?>
 
-                    <a href="&">
-                        <div class="blog-listesi">
-                            <a href="<?php the_permalink(); ?>">
-                                <div class="ana-sayfa-gorsel"><?php the_post_thumbnail( 'medium' ); ?></div>
-                            </a>
-                            <div class="blog-listesi-kategori">
-								<?php the_category( ', ,' ) ?>
-                            </div>
-                            <div class="blog-listesi-yazi">
-                                <h3>
-                                    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></h3>
-                    </a>
-                </div>
-            </div>
-            </a>
+            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+                    <?php include "inc/post_box.php"; ?>
 
 			<?php endwhile; else:
 				_e( '<div class="bisey-bulunmadi">Bişey Bulunmadı...</div>' );
