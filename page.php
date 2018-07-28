@@ -18,11 +18,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
-					<?php
-					if ( ! dynamic_sidebar( 'sidebar' ) ) :?>
-					<?php endif; ?>
-					<?php get_sidebar(); ?>
+
+                <div class="col-4 mobil-kutu">
+                  <?php
+                  if ( ! dynamic_sidebar( 'sidebar' ) ) :?>
+                  <?php endif; ?>
+                  <?php get_sidebar(); ?>
                 </div>
             </div>
         </div>

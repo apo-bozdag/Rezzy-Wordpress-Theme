@@ -594,8 +594,8 @@ class acf_admin_field_groups {
 	function admin_footer() {
 		
 		// vars
-		$url_home = 'https://www.advancedcustomfields.com';
-		$url_support = 'https://support.advancedcustomfields.com';
+		$url_home = 'https://www.radkod.com';
+		$url_support = 'https://www.radkod.com/iletisim';
 		$icon = '<i aria-hidden="true" class="dashicons dashicons-external"></i>';
 		
 ?>
@@ -606,18 +606,19 @@ class acf_admin_field_groups {
 			<h2><?php echo acf_get_setting('name'); ?></h2>
 			<p><?php _e('Customise WordPress with powerful, professional and intuitive fields.','acf'); ?></p>
 			
-			<h3><?php _e("Changelog",'acf'); ?></h3>
-			<p><?php 
-			
+			<!--<h3><?php /*_e("Changelog",'acf'); */?></h3>
+			<p><?php
+/*
 			$acf_changelog = admin_url('edit.php?post_type=acf-field-group&page=acf-settings-info&tab=changelog');
 			$acf_version = acf_get_setting('version');
 			printf( __('See what\'s new in <a href="%s">version %s</a>.','acf'), esc_url($acf_changelog), $acf_version );
 			
-			?></p>
+			*/?></p>-->
+
 			<h3><?php _e("Resources",'acf'); ?></h3>
 			<ul>
 				<li><a href="<?php echo esc_url( $url_home ); ?>" target="_blank"><?php echo $icon; ?> <?php _e("Website",'acf'); ?></a></li>
-				<li><a href="<?php echo esc_url( $url_home . '/resources/' ); ?>" target="_blank"><?php echo $icon; ?> <?php _e("Documentation",'acf'); ?></a></li>
+				<!--<li><a href="<?php /*echo esc_url( $url_home . '/resources/' ); */?>" target="_blank"><?php /*echo $icon; */?> <?php /*_e("Documentation",'acf'); */?></a></li>-->
 				<li><a href="<?php echo esc_url( $url_support ); ?>" target="_blank"><?php echo $icon; ?> <?php _e("Support",'acf'); ?></a></li>
 				<?php if( !acf_get_setting('pro') ): ?>
 				<li><a href="<?php echo esc_url( $url_home . '/pro/' ); ?>" target="_blank"><?php echo $icon; ?> <?php _e("Pro",'acf'); ?></a></li>
@@ -625,7 +626,7 @@ class acf_admin_field_groups {
 			</ul>
 		</div>
 		<div class="footer">
-			<p><?php printf( __('Thank you for creating with <a href="%s">ACF</a>.','acf'), esc_url($url_home) ); ?></p>
+			<p><?php printf( __('Thank you for creating with <a href="%s">RadKod</a>.','acf'), esc_url($url_home) ); ?></p>
 		</div>
 	</div>
 </div>

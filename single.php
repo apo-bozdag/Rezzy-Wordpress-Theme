@@ -52,7 +52,6 @@
                         <div class="kisa_aciklama">
                             <?php echo get_field('kisa_aciklama'); ?>
                         </div>
-                       apo sa
 
                         <!-- Galeri -->
                         <div class="row">
@@ -63,7 +62,9 @@
 			                        <?php foreach( $images as $image ): ?>
                                         <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"
                                                 style="width: 150px;float: left;margin-right: 15px;">
-                                            <a href="<?php echo $image['url']; ?>" itemprop="contentUrl" data-size="600x400">
+                                            <a data-fancybox="gallery" href="<?php echo $image['url']; ?>"
+                                               itemprop="contentUrl" data-size="600x400"
+                                               data-caption="<?php echo $image['caption']; ?>">
                                                 <img src="<?php echo $image['sizes']['thumbnail']; ?>"
                                                      alt="<?php echo $image['alt']; ?>" itemprop="thumbnail" style="width: 150px;"/>
                                             </a>
