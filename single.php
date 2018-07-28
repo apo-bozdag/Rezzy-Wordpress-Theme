@@ -52,6 +52,7 @@
                         <div class="kisa_aciklama">
                             <?php echo get_field('kisa_aciklama'); ?>
                         </div>
+                       apo sa
 
                         <!-- Galeri -->
                         <div class="row">
