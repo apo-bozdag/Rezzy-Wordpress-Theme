@@ -2,7 +2,7 @@
     <div class="container">
         <div style="padding-left:1px;padding-right:1px;" class="container">
             <div class="row mobil-row single-row">
-				<?php dimox_breadcrumbs(); ?>
+				<?php /*dimox_breadcrumbs(); */?>
                 <div class="col-8 kutu icerik-kutu">
                     <!-- Yazar Paneli -->
 					<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>

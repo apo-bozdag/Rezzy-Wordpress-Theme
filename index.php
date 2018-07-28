@@ -6,35 +6,20 @@
     <div class="slider">
         <div class="container slider-container">
             <div class="row slider-row" style="height: 380px;">
-				<?php
-				$slider = new WP_Query( "showposts=3" );
-				$i      = 0;
-				while ( $slider->have_posts() ) :
-					$slider->the_post();
-					$i ++;
-					if ( $i < 2 ) {
-						$class     = "col-8 slider-yan";
-						$back_renk = "";
-					} else {
-						$class     = "col slider-yan-sol";
-						$back_renk = "-2-3";
-					}
-					?>
-                    <div class="<?php echo $class; ?>">
-                        <a href="<?php the_permalink(); ?>">
-							<?php if ( has_post_thumbnail() ) {
-								the_post_thumbnail();
-							} else { ?>
-                                <img src="<?php bloginfo( 'template_url' ); ?>/resimyok.jpg">
-							<?php } ?>
-                            <div class="slider-back-renk<?php echo $back_renk; ?>">
-                                <div class="slider-baslik<?php echo $back_renk; ?>">
-                                    <h4><?php the_title( '' ); ?></h4>
-                                </div>
+	            <?php $slider = new WP_Query("showposts=3");while($slider->have_posts()) : $slider->the_post(); ?>
+	            <?php if(++$burak % 3 != 0){ ?>
+                <div class="col<?php if(++$dundar % 2 != 0){ echo '-8';} ?> slider-yan<?php if(++$des % 3 != 1){ echo '-sol';} ?>">
+		            <?php } ?>
+                    <a href="<?php the_permalink(); ?>"><?php if(has_post_thumbnail()){ the_post_thumbnail(); } else { ?>
+                            <img src="<?php bloginfo('template_url'); ?>/resimyok.jpg">
+			            <?php } ?>
+                        <div class="slider-back-renk<?php echo (++$pon % 3 != 1) ? '-2-3' : ''; ?>">
+                            <div class="slider-baslik<?php echo (++$res % 3 != 1) ? '-2-3' : ''; ?>">
+                                <h4><?php the_title(''); ?></h4>
                             </div>
-                        </a>
-                    </div>
-				<?php endwhile; ?>
+                        </div></a>
+		            <?php echo (++$j % 3 != 2) ? '</div>' : ''; ?>
+		            <?php endwhile; ?>
 
             </div>
         </div>
