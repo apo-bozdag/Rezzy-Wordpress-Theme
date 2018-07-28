@@ -303,5 +303,12 @@ function clean_custom_menus_right() {
 	echo $menu_list;
 }
 
+function kisalt($par, $uzunluk =50){
+	if (strlen($par) > $uzunluk){
+		$par = mb_substr($par, 0, $uzunluk, "UTF-8")."..";
+	}
+	return $par;
+}
+
 require_once( 'wp-updates-theme.php' );
 new WPUpdatesThemeUpdater_2329( 'http://wp-updates.com/api/2/theme', basename( get_template_directory() ) );
