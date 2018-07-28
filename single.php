@@ -52,52 +52,27 @@
                         <div class="kisa_aciklama">
                             <?php echo get_field('kisa_aciklama'); ?>
                         </div>
-                        <div id="demo-test-gallery" class="demo-gallery">
 
-                            <a href="https://farm4.staticflickr.com/3894/15008518202_c265dfa55f_h.jpg" data-size="1600x1600" data-med="https://farm4.staticflickr.com/3894/15008518202_b016d7d289_b.jpg" data-med-size="1024x1024" data-author="Folkert Gorter" class="demo-gallery__img--main">
-                                <img src="https://farm4.staticflickr.com/3894/15008518202_b016d7d289_m.jpg" alt="" />
-                                <figure>This is dummy caption.</figure>
-                            </a>
-
-                            <a href="https://farm6.staticflickr.com/5591/15008867125_b61960af01_h.jpg" data-size="1600x1068" data-med="https://farm6.staticflickr.com/5591/15008867125_68a8ed88cc_b.jpg" data-med-size="1024x683" data-author="Samuel Rohl">
-                                <img src="https://farm6.staticflickr.com/5591/15008867125_68a8ed88cc_m.jpg" alt="" />
-                                <figure>This is dummy caption. It has been placed here solely to demonstrate the look and feel of finished, typeset text.</figure>
-                            </a>
-
-
-                            <a href="https://farm4.staticflickr.com/3902/14985871946_24f47d4b53_h.jpg" data-size="1600x1067" data-med="https://farm4.staticflickr.com/3902/14985871946_86abb8c56f_b.jpg" data-med-size="1024x683" data-author="Ales Krivec">
-                                <img src="https://farm4.staticflickr.com/3902/14985871946_86abb8c56f_m.jpg" alt="" />
-                                <figure>This is dummy caption. It is not meant to be read.</figure>
-                            </a>
-
-
-                            <a href="https://farm6.staticflickr.com/5584/14985868676_b51baa4071_h.jpg" data-size="1600x1067" data-med="https://farm6.staticflickr.com/5584/14985868676_4b802b932a_b.jpg" data-med-size="1024x683" data-author="Michael Hull">
-                                <img src="https://farm6.staticflickr.com/5584/14985868676_4b802b932a_m.jpg" alt="" />
-                                <figure>Dummy caption. It's Greek to you. Unless, of course, you're Greek, in which case, it really makes no sense.</figure>
-                            </a>
-
-                            <a href="https://farm4.staticflickr.com/3920/15008465772_d50c8f0531_h.jpg" data-size="1600x1067" data-med="https://farm4.staticflickr.com/3920/15008465772_383e697089_b.jpg" data-med-size="1024x683" data-author="Thomas Lefebvre">
-                                <img src="https://farm4.staticflickr.com/3920/15008465772_383e697089_m.jpg" alt="" />
-                                <figure>It's a dummy caption. He who searches for meaning here will be sorely disappointed.</figure>
-                            </a>
-                        </div>
                         <!-- Galeri -->
-	                    <?php
+                        <div class="row">
+                            <div class="my-gallery col-8" itemscope itemtype="http://schema.org/ImageGallery">
+		                        <?php
+		                        $images = get_field('galeri');
+		                        if( $images ): ?>
+			                        <?php foreach( $images as $image ): ?>
+                                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"
+                                                style="width: 150px;float: left;margin-right: 15px;">
+                                            <a href="<?php echo $image['url']; ?>" itemprop="contentUrl" data-size="600x400">
+                                                <img src="<?php echo $image['sizes']['thumbnail']; ?>"
+                                                     alt="<?php echo $image['alt']; ?>" itemprop="thumbnail" style="width: 150px;"/>
+                                            </a>
+                                            <figcaption itemprop="caption description"><?php echo $image['caption']; ?></figcaption>
+                                        </figure>
+			                        <?php endforeach; ?>
 
-	                    $images = get_field('galeri');
-
-	                    if( $images ): ?>
-                            <ul>
-			                    <?php foreach( $images as $image ): ?>
-                                    <li>
-                                        <a href="<?php echo $image['url']; ?>">
-                                            <img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" style="width: 150px;"/>
-                                        </a>
-                                        <p><?php echo $image['caption']; ?></p>
-                                    </li>
-			                    <?php endforeach; ?>
-                            </ul>
-	                    <?php endif; ?>
+		                        <?php endif; ?>
+                            </div>
+                        </div>
 
 
 						<?php the_content(); ?>
