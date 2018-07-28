@@ -72,7 +72,7 @@
 
 		                        <?php endif; ?>
                             </div>
-                        </div>
+                        </div>sss
 
 
 						<?php the_content(); ?>
