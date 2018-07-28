@@ -29,29 +29,23 @@
             <div class="row mobil-row">
                 <div class="col-8 kutu">
 					<?php if ( have_posts() ) : while ( have_posts() ) :
-					the_post(); ?>
+						the_post(); ?>
 						<?php include "inc/post_box.php"; ?>
 
-			<?php endwhile; else: ?>
-				<?php _e( '<div class="bisey-bulunmadi">Bişey bulunmadı...</div>' ); ?>
-			<?php endif; ?>
-            <!-- Pagination -->
-	        <?php if(function_exists('wp_pagenavi')) { ?>
-		        <?php wp_pagenavi(); ?>
-	        <?php } else { ?>
-                <span class="cat-item"><?php previous_posts_link('&lsaquo; ' . esc_html__('Yeni Yazılar', 'radkod') . ''); ?></span>
-                <span class="cat-item"><?php next_posts_link('' . esc_html__('Önceki Yazılar', 'radkod') . ' &rsaquo;'); ?></span>
-	        <?php } // Default Pagination ?>
-            <!-- pagination -->
+					<?php endwhile; else: ?>
+						<?php _e( '<div class="bisey-bulunmadi">Bişey bulunmadı...</div>' ); ?>
+					<?php endif; ?>
+
+					<?php include "inc/pagination.php"; ?>
+                </div>
+                <div class="col-4 mobil-kutu" style="width: 100%;max-width: 100%;padding-right: 0px;">
+					<?php
+					if ( ! dynamic_sidebar( 'sidebar' ) ) :?>
+					<?php endif; ?>
+					<?php get_sidebar(); ?>
+                </div>
+            </div>
         </div>
-        <div class="col-4 mobil-kutu" style="width: 100%;max-width: 100%;padding-right: 0px;">
-			<?php
-			if ( ! dynamic_sidebar( 'sidebar' ) ) :?>
-			<?php endif; ?>
-			<?php get_sidebar(); ?>
-        </div>
-    </div>
-    </div>
     </div>
 
 <?php get_footer(); ?>

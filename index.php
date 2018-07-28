@@ -6,7 +6,20 @@
     <div class="slider">
         <div class="container slider-container">
             <div class="row slider-row" style="height: 380px;">
-	            <?php $slider = new WP_Query("showposts=3");while($slider->have_posts()) : $slider->the_post(); ?>
+	            <?php
+                    $slider = get_posts(array(
+	                                'numberposts' => 3,
+                                    'meta_query' => array(
+                                        array(
+                                            'key' => 'manset',
+                                            'compare' => '=',
+                                            'value' => '1'
+                                        )
+                                    )
+                                ));
+                                // $slider = new WP_Query("showposts=3");
+
+                    foreach( $slider as $post ):  ?>
 	            <?php if(++$burak % 3 != 0){ ?>
                 <div class="col<?php if(++$dundar % 2 != 0){ echo '-8';} ?> slider-yan<?php if(++$des % 3 != 1){ echo '-sol';} ?>">
 		            <?php } ?>
@@ -19,7 +32,7 @@
                             </div>
                         </div></a>
 		            <?php echo (++$j % 3 != 2) ? '</div>' : ''; ?>
-		            <?php endwhile; ?>
+		            <?php endforeach; ?>
 
             </div>
         </div>

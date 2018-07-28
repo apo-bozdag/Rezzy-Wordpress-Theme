@@ -5,11 +5,11 @@
             <div class="col-8 kutu">
                 <div class="container">
                     <div class="son-haberler">
-	    <span class="son-yazilar">
-		<div class="son-yazilar-icon">
-		    <i class="fa fa-book"></i></div>
-			<a><?php kategori_ismi() ?></a>
-		</span>
+                        <span class="son-yazilar">
+                        <div class="son-yazilar-icon">
+                            <i class="fa fa-book"></i></div>
+                            <a><?php kategori_ismi() ?></a>
+                        </span>
                     </div>
 					<?php if ( cs_get_option( 'kategori-aciklama-akf' ) ): ?>
                         <div class="kategori-etiket-seo">
@@ -24,14 +24,7 @@
 						<?php _e( '<div class="bisey-bulunmadi">Bişey Bulunmadı...</div>' ); ?>
 					<?php endif; ?>
 
-                    <!-- Pagination -->
-	                <?php if(function_exists('wp_pagenavi')) { ?>
-		                <?php wp_pagenavi(); ?>
-	                <?php } else { ?>
-                        <span class="cat-item"><?php previous_posts_link('&lsaquo; ' . esc_html__('Yeni Yazılar', 'radkod') . ''); ?></span>
-                        <span class="cat-item"><?php next_posts_link('' . esc_html__('Önceki Yazılar', 'radkod') . ' &rsaquo;'); ?></span>
-	                <?php } // Default Pagination ?>
-                    <!-- pagination -->
+	                <?php include "inc/pagination.php"; ?>
 
                 </div>
             </div>
@@ -42,7 +35,6 @@
 				<?php get_sidebar(); ?>
             </div>
         </div>
-    </div>
     </div>
 <?php
 get_footer();
