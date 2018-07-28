@@ -87,6 +87,11 @@ class CSFramework_Shortcode_Manager extends CSFramework_Abstract{
   // shortcode dialog
   public function shortcode_dialog() {
   ?>
+    <style>
+      .ui-dialog {
+        z-index: 100102 !important;
+      }
+    </style>
     <div id="cs-shortcode-dialog" class="cs-dialog" title="<?php esc_html_e( 'Add Shortcode', 'cs-framework' ); ?>">
       <div class="cs-dialog-header">
         <select class="<?php echo ( is_rtl() ) ? 'chosen-rtl ' : ''; ?>cs-dialog-select" data-placeholder="<?php esc_html_e( 'Select a shortcode', 'cs-framework' ); ?>">
